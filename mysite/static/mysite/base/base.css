@@ -610,6 +610,9 @@ section .footer {
   .navbar1 .logo a {
     margin-right: 50px;
   }
+  .navbar1 {
+    height: 17vh;
+  }
 }
 
 @media screen and (max-width: 1142px) {

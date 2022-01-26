@@ -64,7 +64,7 @@ section .TestimonialsSection {
 .listing-carousel-button {
   position: absolute;
   top: 50%;
-  width: 80px;
+  width: 40px;
   height: 50px;
   line-height: 50px;
   margin-top: -25px;
@@ -76,13 +76,13 @@ section .TestimonialsSection {
   outline: none;
 }
 .listing-carousel-button.listing-carousel-button-next {
-  right: -50px;
+  right: 0px;
   padding-right: 20px;
   border-radius: 60px 0 0 60px;
 }
 .listing-carousel-button.listing-carousel-button-prev {
-  left: -50px;
-  padding-left: 74px;
+  left: 0px;
+  padding-left: 30px;
   border-radius: 0 60px 60px 0;
 }
 .listing-carousel-button.listing-carousel-button-next:hover {
