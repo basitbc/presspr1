@@ -24,7 +24,7 @@ body {
 .container1 {
   position: fixed;
 
-  z-index: 999;
+  z-index: 1;
   top: 20rem;
   right: 1rem;
 }
@@ -296,7 +296,7 @@ body {
 
 /* contact */
 
-.contactbtn {
+.contactbtn1 {
   display: inline-block;
   list-style: none;
   padding: 9px 27px;
@@ -312,7 +312,7 @@ body {
   text-decoration: none;
 }
 
-.contactbtn:hover {
+.contactbtn1:hover {
   background-image: -webkit-linear-gradient(45deg, #ffc107 0%, #f76a35 100%);
   background-image: linear-gradient(45deg, #ffc107 0%, #f76a35 100%);
 }
@@ -663,7 +663,7 @@ section .footer {
     margin-left: 0;
   }
   .navbar .contactbtn {
-    margin-left: 500px;
+    margin-left: 70px;
     margin-bottom: 40px;
   }
   .logo a img {
@@ -717,14 +717,15 @@ section .footer {
 
 @media (max-width: 720px) {
   .navbar .contactbtn {
-    margin-left: 200px;
+    margin-left: 70px;
   }
   .logomobile img {
     margin-left: 82px;
   }
 }
-@media (max-width: 520px) {
+
+@media (max-width: 320px) {
   .navbar .contactbtn {
-    margin-left: 140px;
+    margin-left: 70px;
   }
 }
