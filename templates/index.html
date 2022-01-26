@@ -1,0 +1,298 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block index %}
+<!-- Home Section Starts -->
+<section>
+    <div class="home">
+        <div class="home-right">
+            <span class="text1">Leverage Your Brand</span>
+            <span class="text2">In the Untapped Market-Kashmir</span>
+            <div class="buttonbottom1">
+                <h1><b><a href="#row1"> Explore More!</a></b></h1>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- First row Section -->
+<section id="row1" class="row1">
+    <div data-aos="fade" class="bigtext">
+        <h1><b>We at Press PR offer you the <span> Business Consultancy Services</span> to Market your Products in
+                Kashmir.</b></h1>
+    </div>
+    <div data-aos="fade" class="smalltext">
+        <p>
+            The companies are fast approaching this unexplored region to widen their market.
+            To ensure your market share in this region, we offer our unmatched PR services.</p>
+    </div>
+    <div class="boxes">
+        <div data-aos="fade-right" class="box1">
+            <i class="fa fa-print" aria-hidden="true"></i>
+            <h1>Printing</h1>
+            <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, numquam!
+            </p>
+        </div>
+        <div data-aos="fade-up" class="box2">
+            <i class="fa fa-rss"></i>
+            <h1>Broadcasting</h1>
+            <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, numquam!
+            </p>
+        </div>
+        <div data-aos="fade-left" class="box3">
+            <i class="fa fa-bullhorn"></i>
+            <h1>Advertising</h1>
+            <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, numquam!
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- about Section -->
+<section class="row2">
+    <div class="row2-content"></div>
+
+    <div data-aos="zoom-in" class="left-side2 column">
+        <h1> <b>Maximum Media <b><br><span>&emsp; COVERAGE.</span></h1>
+        <p>Press PR is Kashmir based public relation company founded by a young group of local journalists. Our team has
+            a vast
+            work experience in the media sector like print, broadcast and advertising..</p>
+        <a href="{% url 'mysite:about' %}">Know more</a>
+    </div>
+    <div data-aos="zoom-in" class="right-side2 column">
+        <div class="img"></div>
+
+
+    </div>
+</section>
+
+<!-- Services Section  -->
+<section class="services">
+
+    <div class="title">
+        <h1>Services</h1>
+        <p>We provide</p>
+
+    </div>
+    <div data-aos="slide-up" class="threelines">
+        <div class="l1"></div>
+        <div class="l2"></div>
+        <div class="l3"></div>
+    </div>
+    <div class="tabs1">
+        <div data-aos="fade-left" class="tab1">
+
+            <div class="logo">
+                <i class="fa fa-video"></i>
+            </div>
+
+            <h1><b> Press Conference</b></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam sint totam reprehenderit vero,
+                illo blanditiis!</p>
+        </div>
+        <div data-aos="fade-up" class="tab2">
+
+            <div class="logo">
+                <img src="{% static 'mysite/assets/writinglogo.png' %}" alt="">
+            </div>
+            <h1>Writing Services</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam sint totam reprehenderit vero,
+                illo blanditiis!</p>
+        </div>
+        <div data-aos="fade-right" class="tab3">
+            <div class="logo">
+                <i class="fa fa-calendar" aria-hidden="true"></i>
+            </div>
+            <h1>Event Planning</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam sint totam reprehenderit vero,
+                illo blanditiis!</p>
+        </div>
+    </div>
+    <div class="tabs2">
+        <div data-aos="fade-right" data-aos-offset="170" class="tab4">
+            <div class="logo">
+                <i class="fa fa-users"></i>
+            </div>
+
+            <h1>Celebrity PR</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam sint totam reprehenderit vero,
+                illo blanditiis!</p>
+        </div>
+        <div data-aos="fade-down" data-aos-offset="170" class="tab5">
+            <div class="logo"><i class="fas fa-chart-line"></i>
+            </div>
+
+            <h1>Trade Shows</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam sint totam reprehenderit vero,
+                illo blanditiis!</p>
+        </div>
+        <div data-aos="fade-left" data-aos-offset="170" class="tab6">
+            <div class="logo"><i class="fas fa-shopping-basket"></i>
+
+            </div>
+
+            <h1>Product launches</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam sint totam reprehenderit vero,
+                illo blanditiis!</p>
+        </div>
+    </div>
+    <div data-aos="slide-down" class="threelines">
+        <div class="l1"></div>
+        <div class="l2"></div>
+        <div class="l4"></div>
+    </div>
+    <div data-aos="fade" class="buttonbottom">
+        <h1><a href="{% url 'mysite:services' %}"> Lets Start!</a></h1>
+    </div>
+</section>
+
+<!-- Our Clients Section -->
+<section data-aos="zoom-out-left" class="ourclients">
+    <div class="client-area">
+        <div class="container">
+            <h2>Our <span>Clients</span></h2>
+            <section class="logo-area slider">
+                <div class="slide"><img src="{% static 'mysite/assets/ourclient1.jpg' %}" alt=""></div>
+                <div class="slide"><img src="{% static 'mysite/assets/ourclient2.jpg' %}" alt=""></div>
+                <div class="slide"><img src="{% static 'mysite/assets/ourclient3.png' %}" alt=""></div>
+                <div class="slide"><img src="{% static 'mysite/assets/ourclient4.png' %}" alt=""></div>
+                <div class="slide"><img src="{% static 'mysite/assets/ourclient5.jpg' %}" alt=""></div>
+                <div class="slide"><img src="{% static 'mysite/assets/ourclientt6.png' %}" alt=""></div>
+            </section>
+        </div>
+    </div>
+</section>
+
+<!-- R -->
+<section class="TestimonialsSection">
+    <div  class="container">
+        <div class="section-title">
+            <h2>Testimonials</h2>
+            <span class="section-separator"></span>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+    </div>
+    <div class="testimonials-carousel-wrap">
+        <div class="listing-carousel-button listing-carousel-button-next"><i class="fa fa-caret-right"
+                style="color: #fff"></i></div>
+        <div class="listing-carousel-button listing-carousel-button-prev"><i class="fa fa-caret-left"
+                style="color: #fff"></i></div>
+        <div class="testimonials-carousel">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testi-item">
+                            <div class="testi-avatar"><img src="{% static 'mysite/assets/21.jpg' %}"></div>
+                            <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+                            <div class="testimonials-text">
+                                <div class="listing-rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen
+                                    book.</p>
+                                <a href="#" class="text-link"></a>
+                                <div class="testimonials-avatar">
+                                    <h3>John Doe</h3>
+                                    <h4>Owner</h4>
+                                </div>
+                            </div>
+                            <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div>
+                        </div>
+                    </div>
+
+                    <!--second--->
+                    <div class="swiper-slide">
+                        <div class="testi-item">
+                            <div class="testi-avatar"><img src="{% static 'mysite/assets/3.jpg' %}"></div>
+                            <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+                            <div class="testimonials-text">
+                                <div class="listing-rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen
+                                    book.</p>
+                                <a href="#" class="text-link"></a>
+                                <div class="testimonials-avatar">
+                                    <h3>Doe Boe</h3>
+                                    <h4>Director</h4>
+                                </div>
+                            </div>
+                            <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div>
+                        </div>
+                    </div>
+                    <!--third-->
+
+                    <div class="swiper-slide">
+                        <div class="testi-item">
+                            <div class="testi-avatar"><img src="{% static 'mysite/assets/4.jpg' %}"></div>
+                            <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+                            <div class="testimonials-text">
+                                <div class="listing-rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen
+                                    book.</p>
+                                <a href="#" class="text-link"></a>
+                                <div class="testimonials-avatar">
+                                    <h3>Boe Doe</h3>
+                                    <h4>Developer</h4>
+                                </div>
+                            </div>
+                            <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div>
+                        </div>
+                    </div>
+
+                    <!--fourth-->
+                    <div class="swiper-slide">
+                        <div class="testi-item">
+                            <div class="testi-avatar"><img src="{% static 'mysite/assets/6.jpg' %}"></div>
+                            <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+                            <div class="testimonials-text">
+                                <div class="listing-rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen
+                                    book.</p>
+                                <a href="#" class="text-link"></a>
+                                <div class="testimonials-avatar">
+                                    <h3>Doe John</h3>
+                                    <h4>Designer</h4>
+                                </div>
+                            </div>
+                            <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div>
+                        </div>
+                    </div>
+                    <!--testi end-->
+
+                </div>
+            </div>
+        </div>
+
+        <div class="tc-pagination"></div>
+    </div>
+</section>
+
+{% endblock %}

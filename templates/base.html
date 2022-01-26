@@ -1,0 +1,193 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="icon" type="image/x-icon" href="{% static 'mysite/assets/favicon.ico' %}">
+    <!-- CDN Link for animation on Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- R -->
+    <link rel="stylesheet" href="{% static 'mysite/testimonials/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- All CSS links should be linked here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <!-- for Our Clients -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- All CSS files should be linked here -->
+
+    <link rel="stylesheet" href="{% static 'mysite/base/base.css' %}">
+    <link rel="stylesheet" href="{% static 'mysite/index/index.css' %}">
+
+</head>
+
+<body>
+    <nav class="navbar1">
+        <div class="barleft">
+            <div class="menubtn ">
+                <!-- <div class="menubtn__burger"></div> -->
+                <button class="menubtn" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+                    <svg width="100" height="50" viewBox="0 0 100 100">
+                      <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                      <path class="line line2" d="M 20,50 H 80" />
+                      <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                    </svg>
+                  </button>
+            </div>
+        </div>
+
+        <div class="logomobile"><a href="{% url 'mysite:index' %}"><img src="{% static 'mysite/assets/logo1.png' %}"
+                    alt=""></a></div>
+
+        <ul class="navbar ull">
+            <div class="logo"><a href="{% url 'mysite:index' %}"><img src="{% static 'mysite/assets/logo1.png' %}"
+                        alt=""></a></div>
+            <li><a href="{% url 'mysite:index' %}" class="menu-btn">Home</a></li>
+            <li><a href="{% url 'mysite:about' %}" class="menu-btn">About</a></li>
+            <li><a href="{% url 'mysite:services' %}"class="menu-btn">Services</a></li>
+            <li><a href="{% url 'mysite:news' %}" class="menu-btn">News</a></li>
+            <li><a href="{% url 'mysite:practivities' %}" class="menu-btn">PR Activities</a></li>
+            <div class="cnnt"><a href="{% url 'mysite:contact' %}" class="contactbtn"><b>Contact</b></a></div>
+
+        </ul>
+    </nav>
+    <!-- Add Home Page(index.html) here -->
+    {% block index %}
+    {% endblock %}
+    <!-- testmonials -->
+    <!-- {% block testimonials %}
+    {% endblock %} -->
+    <!-- Add About Page here -->
+    <!-- Social Media Icons -->
+    <div class="container1">
+        <div class="box">
+            <div class="icon instagram">
+                <a href="https://www.instagram.com/presspr1/"> <i class="fab fa-instagram fa-2x"></i></a>
+            </div>
+            <p><a style="text-decoration: none;" href="https://www.instagram.com/presspr1/"> Instagram</a></p>
+        </div>
+        <div class="box">
+            <div class="icon facebook">
+                <a href="https://www.facebook.com/kashmir.pr/"><i class="fab fa-facebook fa-2x"></i></a>
+            </div>
+            <p><a style="text-decoration: none;" href="https://www.facebook.com/kashmir.pr/"> Facebook</a></p>
+        </div>
+        <div class="box">
+            <div class="icon twitter">
+                <a href="https://twitter.com/kralyarisajad"> <i class="fab fa-twitter fa-2x"></i></a>
+            </div>
+            <p><a style="text-decoration: none;" href="https://twitter.com/kralyarisajad"> Twitter</a></p>
+        </div>
+        <div class="box">
+            <div class="icon whatsapp">
+                <a href="https://wa.me/91941958775"><i class="fab fa-whatsapp fa-2x"></i></a>
+            </div>
+            <p><a style="text-decoration: none;" href="https://wa.me/919419584775"> Whatsapp</a></p>
+        </div>
+    </div>
+    <!-- Back to Top Button -->
+    <div class="scroll-up-btn">
+        <a href="#"> <i class="blink_me fa fa-angle-double-up" aria-hidden="true"></i>
+    </div>
+
+    <!-- footer here for all -->
+    <footer class="footer-distributed footer">
+
+        <div class="footer-left">
+
+            <img class="footerlogo" src="{% static 'mysite/assets/logo1.png' %}" alt="logo">
+
+            <p class="footer-links">
+                <a href="#" class="link-1">Home</a>
+
+                <a href="{% url 'mysite:about' %}">About</a>
+
+                <a href="{% url 'mysite:services' %}">Services</a>
+
+                <a href="{% url 'mysite:news' %}">News</a>
+
+                <a href="{% url 'mysite:practivities' %}">Pr Activities</a>
+
+                <a href="{% url 'mysite:contact' %}">Contact</a>
+            </p>
+
+            <p class="footer-company-name"></p>
+        </div>
+
+        <div class="footer-center">
+
+            <div>
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <p><span>Sairaa Building, Ist floor,Madina Chowk, Gawkadal, Lal Chowk</span>Srinagar, Jammu and Kashmir
+                    190001, IN</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p><a href="tel:+91-9419584775"> +91-9419584775</a></p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:press.pr.kmr@gmail.com">press.pr.kmr@gmail.com</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <p class="footer-company-about">
+                <span><b> About the company</b></span>
+                Press PR is Kashmir based public relation company founded by a young group of local journalists. Our
+                team
+                has a vast work experience in the media sector like print, broadcast and advertising which helps our
+                clients
+                achieve business targets through effective and targeted communication.
+            </p>
+
+            <div class="footer-icons">
+
+                <a href="https://www.facebook.com/kashmir.pr/"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/kralyarisajad"><i class="fa fa-twitter"></i></a>
+                <a href="https://in.linkedin.com/company/press-pr"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/presspr1/"><i class="fa fa-instagram"></i></a>
+
+            </div>
+
+        </div>
+        
+
+    </footer>
+    <!-- footer section -->
+<div class="ftr" style="background-color: black; padding: 20px 23px; color: #fff;">
+    <span>Created By<a href="http://www.basitchanna.com"> Basit Bilal Channa | </a> <span class="fa fa-copyright"></span> Press Pr 2021 All rights reserved.</span>
+</div>
+</body>
+<!-- All JavaScript links should be linked here -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- R -->
+<script src="{% static 'mysite/testimonials/scripts.js' %}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js"></script>
+<!-- for OurClients -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+<!-- All JavaScript files should be linked here -->
+<script src="{% static 'mysite/base/stylesbase.js' %}"></script>
+<script src="{% static 'mysite/index/index.js' %}"></script>
+
+<!-- Animation -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset: 250,
+    duration: 1400
+  });
+</script>
+
+</html>

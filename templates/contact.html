@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block index %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="{% static 'mysite/contact/contact.css' %}">
+  <!-- Fontawesome icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+</head>
+
+
+<section class="contact-section">
+  <div class="contact-bg">
+    <h3>Get in Touch</h3>
+    <h2>contact us</h2>
+    <div class="line">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <p class="text">If you're looking for a PR partner who shares your vision and passion for success, we'd love to hear
+      from you!
+    </p>
+  </div>
+
+
+  <div  class="contact-body">
+    <div class="contact-info">
+      <div data-aos="fade-right" data-aos-offset="100">
+        <span><i class="fas fa-mobile-alt"></i></span>
+        <span>Phone No.</span>
+        <span class="text">+91-9419584775</span>
+      </div>
+      <div data-aos="fade-down" data-aos-offset="100">
+        <span><i class="fas fa-envelope-open"></i></span>
+        <span>E-mail</span>
+        <span class="text">press_pr_kmr@gmail.com</span>
+      </div>
+      <div data-aos="fade-up" data-aos-offset="100">
+        <span><i class="fas fa-map-marker-alt"></i></span>
+        <span>Address</span>
+        <span class="text">Sairaa Building, Ist floor,Madina Chowk, Gawkadal, Lal Chowk
+          Srinagar, Jammu and Kashmir 190001, IN</span>
+      </div>
+      <div data-aos="fade-left" data-aos-offset="100">
+        <span><i class="fas fa-clock"></i></span>
+        <span>Opening Hours</span>
+        <span class="text">Monday - Saturday (9:00 AM to 5:00 PM)</span>
+      </div>
+    </div>
+
+    <div data-aos="fade-right" class="contact-form">
+
+      <form id="cntform" action="#" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+
+
+        <h5 class=" alert-success"></h5>
+        <div>
+          {{ form.firstname }}
+          {{ form.lastname }}
+        </div>
+        <div>
+          {{ form.email }}
+          {{ form.phone }}
+        </div>
+        <div>
+          {{ form.message }}
+        </div>
+
+        <input type="submit" class="send-btn" value="send message">
+        <input class="reset" type="reset">
+      </form>
+
+      <div>
+        <img data-aos="fade-left" src="{% static 'mysite/assets/contact-png.png' %}" alt="">
+      </div>
+    </div>
+
+
+    <div data-aos="zoom-in" class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.8223386167642!2d74.80781191521561!3d34.07406828059998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e18fd51441e035%3A0x343c257bcb4f0d80!2sPress%20PR!5e0!3m2!1sen!2sin!4v1640111522358!5m2!1sen!2sin"
+        width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+        tabindex="0"></iframe>
+    </div>
+</section>
+<!-- Add Script links Here for contact  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"
+  integrity="sha512-U6K1YLIFUWcvuw5ucmMtT9HH4t0uz3M366qrF5y4vnyH6dgDzndlcGvH/Lz5k8NFh80SN95aJ5rqGZEdaQZ7ZQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="{% static 'mysite/contact/contact.js' %}"></script>
+{% endblock %}

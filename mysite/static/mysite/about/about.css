@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.aboutbg {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
+    url(../assets/bgggg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about .title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 40px;
+  color: black;
+  justify-content: center;
+}
+
+.aboutbg h1 {
+  z-index: 1;
+  padding-top: 20px;
+  font-size: 32px;
+  color: white;
+  text-align: center;
+}
+
+.about .title p {
+  color: rgb(112, 105, 105);
+  padding: 30px 230px 20px 230px;
+  line-height: 2.7rem;
+  text-align: center;
+  font-size: 17px;
+}
+
+.fullpg {
+  display: flex;
+  flex-direction: column;
+  background: gray;
+  min-height: max-content;
+  width: 100%;
+  padding: 0 90px 0 90px;
+}
+.row1,
+.row2,
+.row3 {
+  height: 560px;
+  width: 1120px;
+  margin-bottom: 20;
+  display: flex;
+  flex-direction: row;
+}
+.col11,
+.col22,
+.col31 {
+  height: 100%;
+  width: 50%;
+  background: brown;
+}
+.col12,
+.col21,
+.col32 {
+  height: 100%;
+  width: 50%;
+  background: rgb(74, 153, 10);
+}
+
+@media (max-width: 920px) {
+  .about .title p {
+    padding: 30px 120px 20px 120px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 720px) {
+  .about .title p {
+    padding: 30px 100px 20px 100px;
+    font-size: 15px;
+  }
+  .aboutbg {
+    height: 60vh;
+  }
+}
+
+@media (max-width: 520px) {
+  .about .title p {
+    padding: 30px 40px 20px 40px;
+    font-size: 15px;
+  }
+  .aboutbg {
+    height: 43vh;
+  }
+}

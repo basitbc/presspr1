@@ -1,0 +1,204 @@
+.servicesbg {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
+    url(../assets/bgggg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.servicesbg h1 {
+  z-index: 1;
+  padding-top: 20px;
+  font-size: 32px;
+  color: white;
+  text-align: center;
+}
+
+/* services section styling */
+
+.services {
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+  height: max-content;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.services .title {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.services .threelines {
+  height: 75p x;
+  width: 6px;
+  margin-top: 35px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+  flex-direction: column;
+}
+.services .threelines .l1,
+.services .threelines .l2,
+.services .threelines .l3 {
+  width: 5px;
+  height: 16px;
+  margin-bottom: 9px;
+  background: rgb(255, 166, 0);
+}
+.services .threelines .l4 {
+  width: 5px;
+  height: 14px;
+  background: rgb(255, 166, 0);
+}
+
+.services .title h1 {
+  padding: 90px 0px 0px 0px;
+  font-size: 50px;
+  font-weight: 600;
+}
+.services .title p {
+  color: grey;
+  text-align: center;
+  font-size: 17px;
+  padding: 10px 0 0 0px;
+}
+
+.services .tabs1,
+.services .tabs2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.services .tabs1 .tab1,
+.services .tabs1 .tab2,
+.services .tabs1 .tab3 {
+  height: 260px;
+  width: 370px;
+  margin-top: 65px;
+  margin-right: 20px;
+  padding: 0px 20px 10px 40px;
+  flex-direction: column;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+.services .tabs2 .tab4,
+.services .tabs2 .tab5,
+.services .tabs2 .tab6 {
+  height: 260px;
+  width: 370px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  padding: 0px 20px 10px 40px;
+  flex-direction: column;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+
+.services .tabs1 .tab1 h1,
+.services .tabs1 .tab2 h1,
+.services .tabs1 .tab3 h1,
+.services .tabs2 .tab4 h1,
+.services .tabs2 .tab5 h1,
+.services .tabs2 .tab6 h1 {
+  padding: 20px;
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.services .tabs1 .tab1 p,
+.services .tabs1 .tab2 p,
+.services .tabs1 .tab3 p,
+.services .tabs2 .tab4 p,
+.services .tabs2 .tab5 p,
+.services .tabs2 .tab6 p {
+  color: grey;
+}
+.services .tabs1 .tab1 .logo,
+.services .tabs1 .tab2 .logo,
+.services .tabs1 .tab3 .logo,
+.services .tabs2 .tab4 .logo,
+.services .tabs2 .tab5 .logo,
+.services .tabs2 .tab6 .logo {
+  display: flex;
+  position: relative;
+
+  background-color: rgb(236, 232, 232);
+  height: 208px;
+  width: 91px;
+  margin-bottom: 0px;
+  align-items: center;
+  justify-content: center;
+  color: gray;
+  text-align: center;
+  outline: 5px solid rgb(236, 232, 232);
+  outline-offset: 5px;
+  border-radius: 50%;
+}
+.services .tabs1 .tab1 .logo i {
+  font-size: 57px;
+}
+.services .tabs1 .tab2 .logo img {
+  height: 70px;
+  width: 70px;
+}
+.services .tabs1 .tab3 .logo i {
+  font-size: 57px;
+}
+.services .tabs2 .tab4 .logo i {
+  font-size: 57px;
+}
+.services .tabs2 .tab5 .logo i {
+  font-size: 57px;
+}
+.services .tabs2 .tab6 .logo i {
+  font-size: 57px;
+}
+
+.buttonbottom h1 {
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 17px;
+  cursor: pointer;
+  border-radius: 15px;
+  padding: 12px 23px;
+  background: orange;
+}
+.buttonbottom h1 a {
+  text-decoration: none;
+  color: white;
+}
+
+/* media quries */
+@media (max-width: 897px) {
+  .services .tabs1,
+  .services .tabs2 {
+    flex-direction: column;
+  }
+  .services .tabs1 .tab1,
+  .services .tabs1 .tab2,
+  .services .tabs1 .tab3,
+  .services .tabs2 .tab4,
+  .services .tabs2 .tab5,
+  .services .tabs2 .tab6 {
+    width: auto;
+  }
+}
